@@ -47,6 +47,8 @@ let simpleScorer = function(word){
    let letter = word.toUpperCase();
 	let score = 0;
    for (let i = 0; i < word.length; i++) {
+      let char = letter[i];
+      if (char >= 'A' && char <= 'Z')
          score += 1;
     
    }
